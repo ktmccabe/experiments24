@@ -1,0 +1,29 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Experiments 2024"
+  date: "January 2024"
+  chapters:
+    - index.qmd
+  page-navigation: true
+  sidebar:
+    style: docked
+    background: light
+    foreground: darkblue
+
+format:
+  html:
+    theme: yeti
+    toc-title: Section Contents
+    toc: true
+    toc-location: left
+    toc-depth: 4
+    linkcolor: red
+    hypothesis: true
+
+  
+
+
+editor: visual
