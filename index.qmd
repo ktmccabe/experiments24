@@ -1,8 +1,3 @@
----
-title: "Experimental Methods in Political Science"
-author: "Instructor: Katie McCabe"
----
-
 # Course Notes {.unnumbered}
 
 This document will include important links and course notes for Experimental Methods in Political Science.
@@ -17,7 +12,7 @@ This document will include important links and course notes for Experimental Met
 <!-- Instructions: https://ontheline.trincoll.edu/bookdown.html -->
 
 
-## Getting Set Up in R
+## Getting Set Up in R {.unnumbered}
 
 **Goal**
 
@@ -35,7 +30,7 @@ In other classes, you may come across Stata, SPSS, Excel, or SAS, which are prog
 
 {{< video src="https://www.youtube.com/watch?v=ulIv0NiVTs4" >}}
 
-## Open R Script in RStudio
+## Open R Script in RStudio {.unnumbered}
 
 This next section provides a few notes on using R and RStudio now that you have installed it. In this section, we cover the following materials:
 
@@ -236,7 +231,7 @@ mccabe / 2
 A big part of learning to use R will be learning how to troubleshoot and detect typos in your code that generate error messages.
 
 
-## R Markdown
+## R Markdown {.unnumbered}
 
 An R Markdown document, which you can also create in RStudio, allows you to weave together regular text, R code, and the output of R code in the same document. This can be very convenient when conducting data analysis because it allows you more space to explain what you are doing in each step. We will use it as an effective platform for writing up problem sets.
 
