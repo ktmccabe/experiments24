@@ -13,7 +13,7 @@ We draw on the following readings
   - Gerber, A. and D.P. Green. 2012. *Field Experiments: Design, Analysis, and Interpretation.* W.W. Norton. Chapter 1.
   - Angrist, Joshua D. and Jorn-Steffen Pischke. Mostly Harmless Econometrics. Part One: Preliminaries: "Questions about Questions." Available online [here](https://assets.press.princeton.edu/chapters/s8769.pdf) 
   - Kinder, Donald R. and Thomas R. Palfrey. 1993. "On Behalf of an Experimental Political Science." In *Experimental Foundations of Political Science.* 
-  - Sen, Maya and Omar Wasow. 2016. "Race as a Bundle of Sticks: Designs that Estimate Effects of Seemingly Immutable Characteristics." Annual Review of Political Science doi: 10.1146/annurev-polisci-032015-010015.
+
 
 Skim one of the following for a more skeptical take on experiments/randomized controlled trials 
   + Teele, Dawn. Field Experiments and Their Critics : Essays on the Uses and Abuses of Experimentation in the Social Sciences. New Haven: Yale University Press. Chapter 9 by Ian Shapiro or Chapter 2 by Susan Stokes
