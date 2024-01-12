@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Experiments 2024 - 3&nbsp; Causal Effects</title>
+<title>Experiments 2024 - 2&nbsp; Causal Effects</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -108,7 +108,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02-CausalEffects.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Causal Effects</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02-CausalEffects.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Causal Effects</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -136,19 +136,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Experimental Methods in Political Science</span></span></a>
+ <span class="menu-text">Course Notes</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./01-Experimentation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Why Experiment?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Why Experiment?</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./02-CausalEffects.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Causal Effects</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Causal Effects</span></span></a>
   </div>
 </li>
     </ul>
@@ -157,24 +157,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Section Contents</h2>
    
   <ul>
-  <li><a href="#potential-outcomes-framework" id="toc-potential-outcomes-framework" class="nav-link active" data-scroll-target="#potential-outcomes-framework"><span class="header-section-number">3.1</span> Potential Outcomes Framework</a>
+  <li><a href="#potential-outcomes-framework" id="toc-potential-outcomes-framework" class="nav-link active" data-scroll-target="#potential-outcomes-framework"><span class="header-section-number">2.1</span> Potential Outcomes Framework</a>
   <ul>
-  <li><a href="#average-treatment-effect" id="toc-average-treatment-effect" class="nav-link" data-scroll-target="#average-treatment-effect"><span class="header-section-number">3.1.1</span> Average Treatment Effect</a></li>
+  <li><a href="#average-treatment-effect" id="toc-average-treatment-effect" class="nav-link" data-scroll-target="#average-treatment-effect"><span class="header-section-number">2.1.1</span> Average Treatment Effect</a></li>
   </ul></li>
-  <li><a href="#fundamental-problem-of-causal-inference" id="toc-fundamental-problem-of-causal-inference" class="nav-link" data-scroll-target="#fundamental-problem-of-causal-inference"><span class="header-section-number">3.2</span> Fundamental Problem of Causal Inference</a></li>
-  <li><a href="#identification-strategy" id="toc-identification-strategy" class="nav-link" data-scroll-target="#identification-strategy"><span class="header-section-number">3.3</span> Identification strategy</a></li>
-  <li><a href="#difference-in-means-estimator" id="toc-difference-in-means-estimator" class="nav-link" data-scroll-target="#difference-in-means-estimator"><span class="header-section-number">3.4</span> Difference in Means Estimator</a></li>
-  <li><a href="#overview-of-identification-assumptions" id="toc-overview-of-identification-assumptions" class="nav-link" data-scroll-target="#overview-of-identification-assumptions"><span class="header-section-number">3.5</span> Overview of identification assumptions</a></li>
-  <li><a href="#application-in-r" id="toc-application-in-r" class="nav-link" data-scroll-target="#application-in-r"><span class="header-section-number">3.6</span> Application in R</a>
+  <li><a href="#fundamental-problem-of-causal-inference" id="toc-fundamental-problem-of-causal-inference" class="nav-link" data-scroll-target="#fundamental-problem-of-causal-inference"><span class="header-section-number">2.2</span> Fundamental Problem of Causal Inference</a></li>
+  <li><a href="#identification-strategy" id="toc-identification-strategy" class="nav-link" data-scroll-target="#identification-strategy"><span class="header-section-number">2.3</span> Identification strategy</a></li>
+  <li><a href="#difference-in-means-estimator" id="toc-difference-in-means-estimator" class="nav-link" data-scroll-target="#difference-in-means-estimator"><span class="header-section-number">2.4</span> Difference in Means Estimator</a></li>
+  <li><a href="#overview-of-identification-assumptions" id="toc-overview-of-identification-assumptions" class="nav-link" data-scroll-target="#overview-of-identification-assumptions"><span class="header-section-number">2.5</span> Overview of identification assumptions</a></li>
+  <li><a href="#application-in-r" id="toc-application-in-r" class="nav-link" data-scroll-target="#application-in-r"><span class="header-section-number">2.6</span> Application in R</a>
   <ul>
-  <li><a href="#loading-the-data" id="toc-loading-the-data" class="nav-link" data-scroll-target="#loading-the-data"><span class="header-section-number">3.6.1</span> Loading the data</a></li>
-  <li><a href="#variable-classes" id="toc-variable-classes" class="nav-link" data-scroll-target="#variable-classes"><span class="header-section-number">3.6.2</span> Variable classes</a></li>
-  <li><a href="#exploring-treatment-and-control-groups" id="toc-exploring-treatment-and-control-groups" class="nav-link" data-scroll-target="#exploring-treatment-and-control-groups"><span class="header-section-number">3.6.3</span> Exploring Treatment and Control Groups</a></li>
-  <li><a href="#means-with-relational-operators" id="toc-means-with-relational-operators" class="nav-link" data-scroll-target="#means-with-relational-operators"><span class="header-section-number">3.6.4</span> Means with Relational Operators</a></li>
-  <li><a href="#means-with-tidyverse" id="toc-means-with-tidyverse" class="nav-link" data-scroll-target="#means-with-tidyverse"><span class="header-section-number">3.6.5</span> Means with <code>tidyverse</code></a></li>
-  <li><a href="#ate-with-linear-regression" id="toc-ate-with-linear-regression" class="nav-link" data-scroll-target="#ate-with-linear-regression"><span class="header-section-number">3.6.6</span> ATE with linear regression</a></li>
-  <li><a href="#subsetting-data-in-r" id="toc-subsetting-data-in-r" class="nav-link" data-scroll-target="#subsetting-data-in-r"><span class="header-section-number">3.6.7</span> Subsetting data in R</a></li>
-  <li><a href="#additional-practice" id="toc-additional-practice" class="nav-link" data-scroll-target="#additional-practice"><span class="header-section-number">3.6.8</span> Additional Practice</a></li>
+  <li><a href="#loading-the-data" id="toc-loading-the-data" class="nav-link" data-scroll-target="#loading-the-data"><span class="header-section-number">2.6.1</span> Loading the data</a></li>
+  <li><a href="#variable-classes" id="toc-variable-classes" class="nav-link" data-scroll-target="#variable-classes"><span class="header-section-number">2.6.2</span> Variable classes</a></li>
+  <li><a href="#exploring-treatment-and-control-groups" id="toc-exploring-treatment-and-control-groups" class="nav-link" data-scroll-target="#exploring-treatment-and-control-groups"><span class="header-section-number">2.6.3</span> Exploring Treatment and Control Groups</a></li>
+  <li><a href="#means-with-relational-operators" id="toc-means-with-relational-operators" class="nav-link" data-scroll-target="#means-with-relational-operators"><span class="header-section-number">2.6.4</span> Means with Relational Operators</a></li>
+  <li><a href="#means-with-tidyverse" id="toc-means-with-tidyverse" class="nav-link" data-scroll-target="#means-with-tidyverse"><span class="header-section-number">2.6.5</span> Means with <code>tidyverse</code></a></li>
+  <li><a href="#ate-with-linear-regression" id="toc-ate-with-linear-regression" class="nav-link" data-scroll-target="#ate-with-linear-regression"><span class="header-section-number">2.6.6</span> ATE with linear regression</a></li>
+  <li><a href="#subsetting-data-in-r" id="toc-subsetting-data-in-r" class="nav-link" data-scroll-target="#subsetting-data-in-r"><span class="header-section-number">2.6.7</span> Subsetting data in R</a></li>
+  <li><a href="#additional-practice" id="toc-additional-practice" class="nav-link" data-scroll-target="#additional-practice"><span class="header-section-number">2.6.8</span> Additional Practice</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -188,7 +188,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="causaleffects" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Causal Effects</span></span></h1>
+<h1 class="title"><span id="causaleffects" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Causal Effects</span></span></h1>
 </div>
 
 
@@ -203,6 +203,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
+<script src="https://hypothes.is/embed.js" async=""></script>
 <p>In this section, we discuss causal effects. It builds on Gerber and Green FEDAI Chapter 2.</p>
 <p>Goal of Causality</p>
 <p>Isolate the <em>manipulation</em> of one factor (“No causation without manipulation.”), while <em>controlling</em> or “holding everything else constant.”</p>
@@ -223,8 +224,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Counterfactual: Would Jamal have gotten a job if he were white?</li>
 </ul></li>
 </ul>
-<section id="potential-outcomes-framework" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="potential-outcomes-framework"><span class="header-section-number">3.1</span> Potential Outcomes Framework</h2>
+<section id="potential-outcomes-framework" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="potential-outcomes-framework"><span class="header-section-number">2.1</span> Potential Outcomes Framework</h2>
 <p>To make causal claims, we compare two states of the world and their potential outcomes:</p>
 <p><span class="math inline">\(Y_i(d)\)</span></p>
 <ul>
@@ -243,8 +244,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <p><img src="images/ggt2.png" class="img-fluid"> <em>FEDAI Table 2.1</em></p>
 <p>The treatment effect is the difference between two states of the world: one which a unit receives treatment, and another in which it does not.</p>
-<section id="average-treatment-effect" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="average-treatment-effect"><span class="header-section-number">3.1.1</span> Average Treatment Effect</h3>
+<section id="average-treatment-effect" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="average-treatment-effect"><span class="header-section-number">2.1.1</span> Average Treatment Effect</h3>
 <p>The <strong><em>average treatment effect</em></strong> then is the mean of these individual treatment effects:</p>
 <ul>
 <li>Estimand: On average, how much outcomes would change if all units go from untreated to treated.</li>
@@ -269,8 +270,8 @@ Try on your own, then expand for the answer.
 </details>
 </section>
 </section>
-<section id="fundamental-problem-of-causal-inference" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="fundamental-problem-of-causal-inference"><span class="header-section-number">3.2</span> Fundamental Problem of Causal Inference</h2>
+<section id="fundamental-problem-of-causal-inference" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="fundamental-problem-of-causal-inference"><span class="header-section-number">2.2</span> Fundamental Problem of Causal Inference</h2>
 <p>We only observe one potential outcome: <span class="math inline">\(Y_i\)</span>.</p>
 <ul>
 <li><span class="math inline">\(Y_i = d_iY_i(1) + (1-d_i)Y_i(0)\)</span></li>
@@ -281,8 +282,8 @@ Try on your own, then expand for the answer.
 <li>It is impossible to observe the actual causal effect of any of the above: <span class="math inline">\(Y_i(1) -Y_i(0)\)</span></li>
 </ul>
 </section>
-<section id="identification-strategy" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="identification-strategy"><span class="header-section-number">3.3</span> Identification strategy</h2>
+<section id="identification-strategy" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="identification-strategy"><span class="header-section-number">2.3</span> Identification strategy</h2>
 <p>We cannot observe the ideal actual causal effect. Instead, we will frame our exercise on the premise that we are randomly <em>sampling</em> our <span class="math inline">\(i's\)</span> from a population. We then will create an identification strategy.</p>
 <ul>
 <li>“Ideas that enable researchers to use observable quantities (e.g., sample averages) to reveal parameters of interest (e.g., average treatment effects)” (Gerber and Green 2012, 34)</li>
@@ -312,8 +313,8 @@ E[X]=\sum x Pr[X=x]
 </ul>
 <p><img src="images/ggt2.png" class="img-fluid"> <em>FEDAI Table 2.1</em></p>
 </section>
-<section id="difference-in-means-estimator" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="difference-in-means-estimator"><span class="header-section-number">3.4</span> Difference in Means Estimator</h2>
+<section id="difference-in-means-estimator" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="difference-in-means-estimator"><span class="header-section-number">2.4</span> Difference in Means Estimator</h2>
 <p>In the real world, we follow this process for causal identification:</p>
 <ul>
 <li>Our motivation: Find quantities that represent the population parameters (<span class="math inline">\(\theta\)</span>)</li>
@@ -370,8 +371,8 @@ E[\widehat{ATE}] &amp;= ATE
 <li>This allows us to use a simple differences in means estimator in experiments to estimate our average treatment effects.</li>
 </ul>
 </section>
-<section id="overview-of-identification-assumptions" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="overview-of-identification-assumptions"><span class="header-section-number">3.5</span> Overview of identification assumptions</h2>
+<section id="overview-of-identification-assumptions" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="overview-of-identification-assumptions"><span class="header-section-number">2.5</span> Overview of identification assumptions</h2>
 <p>What if we can’t guarantee random assignment?</p>
 <p><strong><em>Example: Selection into treatment</em></strong></p>
 <p>What if we didn’t have the independence? Subtract and add <span class="math inline">\(E[Y_i (0) | D_i=1]\)</span> to help us illustrate a type of bias that may occur.</p>
@@ -393,8 +394,8 @@ E[\widehat{ATE}] &amp;= ATE
 </ul>
 <p>Let’s put these into plain words.</p>
 </section>
-<section id="application-in-r" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="application-in-r"><span class="header-section-number">3.6</span> Application in R</h2>
+<section id="application-in-r" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="application-in-r"><span class="header-section-number">2.6</span> Application in R</h2>
 <p>Article: “Are Emily and Greg More Employable Than Lakisha and Jamal? A Field Experiment on Labor Market Discrimination” by Bertrand and Mullainathan (2004)</p>
 <ul>
 <li>Research Question: Does race influence hiring decisions?</li>
@@ -406,8 +407,8 @@ E[\widehat{ATE}] &amp;= ATE
 </ul></li>
 </ul>
 <p>How should we estimate the average treatment effect?</p>
-<section id="loading-the-data" class="level3" data-number="3.6.1">
-<h3 data-number="3.6.1" class="anchored" data-anchor-id="loading-the-data"><span class="header-section-number">3.6.1</span> Loading the data</h3>
+<section id="loading-the-data" class="level3" data-number="2.6.1">
+<h3 data-number="2.6.1" class="anchored" data-anchor-id="loading-the-data"><span class="header-section-number">2.6.1</span> Loading the data</h3>
 <p>We will use data from <a href="https://qss.princeton.press/student-resources-for-quantitative-social-science/">Imai (2017)</a> Chapter 2.</p>
 <p>Let’s load the data. Note: When we have variables that are text-based categories, we may want to tell R to treat these “strings” of text information as factor variables, a particular type of variable that represents data as a set of nominal (unordered) or ordinal (ordered) categories. We do this with the <code>stringsAsFactors</code> argument.</p>
 <div class="cell">
@@ -452,8 +453,8 @@ E[\widehat{ATE}] &amp;= ATE
 </div>
 </div>
 </section>
-<section id="variable-classes" class="level3" data-number="3.6.2">
-<h3 data-number="3.6.2" class="anchored" data-anchor-id="variable-classes"><span class="header-section-number">3.6.2</span> Variable classes</h3>
+<section id="variable-classes" class="level3" data-number="2.6.2">
+<h3 data-number="2.6.2" class="anchored" data-anchor-id="variable-classes"><span class="header-section-number">2.6.2</span> Variable classes</h3>
 <p>We can check the class of each variable: Look, we have a new type, a “factor” variable.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(resume<span class="sc">$</span>firstname)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -491,8 +492,8 @@ E[\widehat{ATE}] &amp;= ATE
 <li>Always check <code>class()</code> to find out the variable type</li>
 </ul>
 </section>
-<section id="exploring-treatment-and-control-groups" class="level3" data-number="3.6.3">
-<h3 data-number="3.6.3" class="anchored" data-anchor-id="exploring-treatment-and-control-groups"><span class="header-section-number">3.6.3</span> Exploring Treatment and Control Groups</h3>
+<section id="exploring-treatment-and-control-groups" class="level3" data-number="2.6.3">
+<h3 data-number="2.6.3" class="anchored" data-anchor-id="exploring-treatment-and-control-groups"><span class="header-section-number">2.6.3</span> Exploring Treatment and Control Groups</h3>
 <p>We are going to use several different approaches to calculate our difference in means between treatment and control to help us explore R’s capabilities and common computational approaches.</p>
 <p>We can use the <code>table</code> command to see how many observations in our data fall into each category or numerical value.</p>
 <div class="cell">
@@ -537,8 +538,8 @@ calledback      black      white
 </div>
 <p><strong><em>How can we interpret this crosstabulation?</em></strong></p>
 </section>
-<section id="means-with-relational-operators" class="level3" data-number="3.6.4">
-<h3 data-number="3.6.4" class="anchored" data-anchor-id="means-with-relational-operators"><span class="header-section-number">3.6.4</span> Means with Relational Operators</h3>
+<section id="means-with-relational-operators" class="level3" data-number="2.6.4">
+<h3 data-number="2.6.4" class="anchored" data-anchor-id="means-with-relational-operators"><span class="header-section-number">2.6.4</span> Means with Relational Operators</h3>
 <p>Goal: Compare callback rates for white sounding names to black sounding names, so we need to be able to filter by race.</p>
 <p>Good news: We have several relational operators in R that evaluate logical statements:</p>
 <ul>
@@ -568,8 +569,8 @@ calledback      black      white
 </div>
 <p>How can we interpret this? Do white applicants have an advantage?</p>
 </section>
-<section id="means-with-tidyverse" class="level3" data-number="3.6.5">
-<h3 data-number="3.6.5" class="anchored" data-anchor-id="means-with-tidyverse"><span class="header-section-number">3.6.5</span> Means with <code>tidyverse</code></h3>
+<section id="means-with-tidyverse" class="level3" data-number="2.6.5">
+<h3 data-number="2.6.5" class="anchored" data-anchor-id="means-with-tidyverse"><span class="header-section-number">2.6.5</span> Means with <code>tidyverse</code></h3>
 <p>The <code>tidyverse</code> offers a suite of R functions and a different grammar or syntax of coding. Some people prefer this to the “base R” codes we did above. To use this suite, first install the <code>tidyverse</code> package:</p>
 <p>When you install a package, this is like downloading an app to your phone. You only have to do it one time.</p>
 <div class="cell">
@@ -610,8 +611,8 @@ calledback      black      white
 </div>
 </div>
 </section>
-<section id="ate-with-linear-regression" class="level3" data-number="3.6.6">
-<h3 data-number="3.6.6" class="anchored" data-anchor-id="ate-with-linear-regression"><span class="header-section-number">3.6.6</span> ATE with linear regression</h3>
+<section id="ate-with-linear-regression" class="level3" data-number="2.6.6">
+<h3 data-number="2.6.6" class="anchored" data-anchor-id="ate-with-linear-regression"><span class="header-section-number">2.6.6</span> ATE with linear regression</h3>
 <p>Linear regression also offers a way to calculate the conditional means and difference in means between two groups. In R, we use <code>lm()</code> for this. The syntax is <code>lm(y ~ x, data = mydataframe)</code>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">lm</span>(call <span class="sc">~</span> race, <span class="at">data =</span>resume)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -626,8 +627,8 @@ calledback      black      white
 </div>
 <p>In a regression of this form, the intercept represents the mean of the reference category, in this case, the callback rate for Black applicants. The coefficient on <code>racewhite</code> represents the difference in means between the reference category and this group. I.e., going from a Black applicant (the reference category) to a white applicant, on average, increases call backs by 3.2 percentage points.</p>
 </section>
-<section id="subsetting-data-in-r" class="level3" data-number="3.6.7">
-<h3 data-number="3.6.7" class="anchored" data-anchor-id="subsetting-data-in-r"><span class="header-section-number">3.6.7</span> Subsetting data in R</h3>
+<section id="subsetting-data-in-r" class="level3" data-number="2.6.7">
+<h3 data-number="2.6.7" class="anchored" data-anchor-id="subsetting-data-in-r"><span class="header-section-number">2.6.7</span> Subsetting data in R</h3>
 <p>Maybe we are interested in differences in callbacks for females. One approach for looking at the treatment effect for female applicants, only, is to subset our data to include only female names.</p>
 <ul>
 <li>To do this, we will assign a new <code>data.frame</code> object that keeps only those rows where <code>sex == "female"</code> and retains all columns</li>
@@ -660,8 +661,8 @@ Try on your own, then expand for the answer.
 </ul>
 </details>
 </section>
-<section id="additional-practice" class="level3" data-number="3.6.8">
-<h3 data-number="3.6.8" class="anchored" data-anchor-id="additional-practice"><span class="header-section-number">3.6.8</span> Additional Practice</h3>
+<section id="additional-practice" class="level3" data-number="2.6.8">
+<h3 data-number="2.6.8" class="anchored" data-anchor-id="additional-practice"><span class="header-section-number">2.6.8</span> Additional Practice</h3>
 <p>We will use data from the article below:</p>
 <p>Thal, A. (2020). The desire for social status and economic conservatism among affluent Americans. American Political Science Review, 114(2), 426-442.</p>
 <p>In the experiment, affluent Americans are randomly assigned to encounter Facebook posts in which others broadcast their economic success. These posts are designed in a way that encourages affluent respondents to view economic success as a means of achieving social status. The experiment includes a sample of 2010 affluent Americans– people who report household incomes in the top 10 percent of the U.S. income distribution.</p>
@@ -997,7 +998,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./01-Experimentation.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Why Experiment?</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Why Experiment?</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
