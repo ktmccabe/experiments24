@@ -1,8 +1,5 @@
 # Why Experiment?
 
-```{=html}
-<script src="https://hypothes.is/embed.js" async></script>
-```
 
 ## What are experiments?
 
@@ -489,6 +486,24 @@ axis(1, c(1,2,3), c("Concrete", "Placebo", "Social\n Approval"),
      tick=F)
 ```
 
+
+Another approach would be to put the means into a dataframe. That type of format makes it easier to work with the ggplot interface, an alternative to `plot`
+
+There are two ways to do this. First, we could manually create a dataframe using the `conditionmeans` we created above. In a second way, explored in the next section, we could use tidyverse functions to find the means.
+
+```{r}
+plotdf <- data.frame(means = conditionmeans,
+                     groups = c(c("Concrete", "Placebo", "Social\n Approval")))
+plotdf
+```
+
+
+```{r}
+ggplot(plotdf, aes(x=groups, y=means))+
+  geom_point()+
+  theme_minimal()
+
+```
 
 How did seeing a message about social approval influence economic attitudes?
 

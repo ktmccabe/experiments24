@@ -1,8 +1,5 @@
 # Causal Effects {#causaleffects}
 
-```{=html}
-<script src="https://hypothes.is/embed.js" async></script>
-```
 
 In this section, we discuss causal effects. It builds on Gerber and Green FEDAI Chapter 2.
 

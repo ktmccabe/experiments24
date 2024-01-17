@@ -196,7 +196,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<script src="https://hypothes.is/embed.js" async=""></script>
 <section id="what-are-experiments" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="what-are-experiments"><span class="header-section-number">1.1</span> What are experiments?</h2>
 <p>Our first discussion will be focused on elaborating on what we see as the goals of social science and how experiments fit into these goals.</p>
@@ -611,6 +610,27 @@ Your ideas …
 <span id="cb56-10"><a href="#cb56-10" aria-hidden="true" tabindex="-1"></a>     <span class="at">tick=</span>F)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="01-Experimentation_files/figure-html/unnamed-chunk-39-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Another approach would be to put the means into a dataframe. That type of format makes it easier to work with the ggplot interface, an alternative to <code>plot</code></p>
+<p>There are two ways to do this. First, we could manually create a dataframe using the <code>conditionmeans</code> we created above. In a second way, explored in the next section, we could use tidyverse functions to find the means.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>plotdf <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">means =</span> conditionmeans,</span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>                     <span class="at">groups =</span> <span class="fu">c</span>(<span class="fu">c</span>(<span class="st">"Concrete"</span>, <span class="st">"Placebo"</span>, <span class="st">"Social</span><span class="sc">\n</span><span class="st"> Approval"</span>)))</span>
+<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a>plotdf</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      means            groups
+1 0.6647485          Concrete
+2 0.6340948           Placebo
+3 0.6904444 Social\n Approval</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(plotdf, <span class="fu">aes</span>(<span class="at">x=</span>groups, <span class="at">y=</span>means))<span class="sc">+</span></span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()<span class="sc">+</span></span>
+<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="01-Experimentation_files/figure-html/unnamed-chunk-41-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <p>How did seeing a message about social approval influence economic attitudes?</p>
