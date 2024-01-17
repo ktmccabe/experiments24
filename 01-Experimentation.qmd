@@ -502,6 +502,8 @@ plotdf
 ```{r}
 ggplot(plotdf, aes(x=groups, y=means))+
   geom_point()+
+  labs(y= "Mean Economic Conservatism", title="Economic Conservatism by Condition",
+       x="Experimental Condition")+
   theme_minimal()
 
 ```
