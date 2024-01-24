@@ -271,7 +271,7 @@ This is also where we can download the data. Go to Export and Import - \> Export
 
 If you open up your .csv file in a spreadsheet software like Excel, you will notice that the first row contains your question names as variables. The next two rows are more information about the questions, including the question wording. The actual responses start in row 3.
 
--   If you load the csv file into R as is, you would want to delete the first two rows from your dataframe (the first row will automatically be treated as a header in R)
+-   If you load the csv file into R as is, you would want to delete the first two rows from your dataframe (the first row will automatically be treated as a header in R). The R package `qualtRics` has a function that will do this for you.
 -   Alternatively, you can delete rows 2-3 from the spreadsheet software before loading it into R.
 -   Save the .csv file with an informative name in the working directory where you store files to work on in R.
 
@@ -281,6 +281,15 @@ Load the data into R.
 ## my data are in a /data/ subfolder of my working directory
 expdemo <- read.csv("data/expdemo.csv")
 expdemo <- expdemo[-c(1:2),] # remove first two rows
+nrow(expdemo)
+```
+
+
+```{r}
+library(qualtRics)
+## my data are in a /data/ subfolder of my working directory
+expdemo <- read_survey("data/expdemo.csv")
+nrow(expdemo)
 ```
 
 Let's limit the sample to those who agreed to our consent form. Locate your consent variable and subset on those who agree.
