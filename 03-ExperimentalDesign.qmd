@@ -326,6 +326,8 @@ Qualtrics has a number of other features you can use, including different questi
 
 -   Their help pages are pretty useful. Here is one on [question types](https://www.qualtrics.com/support/survey-platform/survey-module/editing-questions/question-types-guide/question-types-overview/).
 
+- This [blog post](https://cghlewis.com/blog/survey_data/) from Crystal Lewis also mentions several important tips and quirks of Qualtrics to consider when building a survey.
+
 For those familiar with "conjoint experiments" that have a lot of randomization, Anton Strezhnev has developed a tool for programming these in Qualtrics. See information [here](https://github.com/astrezhnev/conjointsdt).
 
 It is also possible to download data from Qualtrics directly into R using an R package [here](https://github.com/ropensci/qualtRics).
