@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ethics</title>
+<title>Experiments 2024 - 6&nbsp; Ethics and Sampling Considerations</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -57,32 +57,173 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="06-ethics_files/libs/clipboard/clipboard.min.js"></script>
-<script src="06-ethics_files/libs/quarto-html/quarto.js"></script>
-<script src="06-ethics_files/libs/quarto-html/popper.min.js"></script>
-<script src="06-ethics_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="06-ethics_files/libs/quarto-html/anchor.min.js"></script>
-<link href="06-ethics_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="06-ethics_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="06-ethics_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="06-ethics_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="06-ethics_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./05-Visualization.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
-<body class="fullcontent">
+<body class="nav-sidebar docked">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06-ethics.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ethics and Sampling Considerations</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Experiments 2024</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Notes</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-Experimentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Why Experiment?</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-CausalEffects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Causal Effects</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-ExperimentalDesign.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Experimental Design</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-Uncertainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Uncertainty</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-Visualization.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Visualization</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-ethics.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ethics and Sampling Considerations</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Section Contents</h2>
+   
+  <ul>
+  <li><a href="#value-of-informed-consent" id="toc-value-of-informed-consent" class="nav-link active" data-scroll-target="#value-of-informed-consent"><span class="header-section-number">6.1</span> Value of Informed Consent</a></li>
+  <li><a href="#research-integrity-reproducibility-and-transparency" id="toc-research-integrity-reproducibility-and-transparency" class="nav-link" data-scroll-target="#research-integrity-reproducibility-and-transparency"><span class="header-section-number">6.2</span> Research Integrity, Reproducibility, and Transparency</a>
+  <ul>
+  <li><a href="#preregistration" id="toc-preregistration" class="nav-link" data-scroll-target="#preregistration"><span class="header-section-number">6.2.1</span> Preregistration</a></li>
+  <li><a href="#reporting-an-experimental-analysis" id="toc-reporting-an-experimental-analysis" class="nav-link" data-scroll-target="#reporting-an-experimental-analysis"><span class="header-section-number">6.2.2</span> Reporting an Experimental Analysis</a></li>
+  </ul></li>
+  <li><a href="#failed-designs" id="toc-failed-designs" class="nav-link" data-scroll-target="#failed-designs"><span class="header-section-number">6.3</span> “Failed Designs”</a></li>
+  <li><a href="#sampling-considerations" id="toc-sampling-considerations" class="nav-link" data-scroll-target="#sampling-considerations"><span class="header-section-number">6.4</span> Sampling Considerations</a>
+  <ul>
+  <li><a href="#power-analysis" id="toc-power-analysis" class="nav-link" data-scroll-target="#power-analysis"><span class="header-section-number">6.4.1</span> Power Analysis</a></li>
+  <li><a href="#power-in-r" id="toc-power-in-r" class="nav-link" data-scroll-target="#power-in-r"><span class="header-section-number">6.4.2</span> Power in R</a>
+  <ul class="collapse">
+  <li><a href="#additional-resources-for-power-in-r" id="toc-additional-resources-for-power-in-r" class="nav-link" data-scroll-target="#additional-resources-for-power-in-r"><span class="header-section-number">6.4.2.1</span> Additional Resources for Power in R</a></li>
+  </ul></li>
+  <li><a href="#relationship-between-error-rates-and-multiple-testing" id="toc-relationship-between-error-rates-and-multiple-testing" class="nav-link" data-scroll-target="#relationship-between-error-rates-and-multiple-testing"><span class="header-section-number">6.4.3</span> Relationship between Error Rates and Multiple Testing</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    </div>
+<!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="ethics" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ethics and Sampling Considerations</span></span></h1>
+</div>
 
 
-<section id="ethics" class="level1">
-<h1>Ethics and Sampling Considerations</h1>
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
 <p>In this section, we touch on different ethical issues that can arise when conducting experiments, as well as considerations we should have when recruiting subjects and assessing data quality.</p>
 <p>We touch on the following resources:</p>
 <ul>
@@ -93,8 +234,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Krupnikov, Yanna, Nam, Hannah, &amp; Style, Hillary. (2021). Convenience Samples in Political Science Experiments. In J. Druckman &amp; D. Green (Eds.), Advances in Experimental Political Science (pp.&nbsp;165-183). Cambridge: Cambridge University Press. doi:10.1017/9781108777919.012</li>
 <li>Kane JV. More than meets the ITT: A guide for anticipating and investigating nonsignificant results in survey experiments. Journal of Experimental Political Science. Published online 2024:1-16. doi:10.1017/XPS.2024.1</li>
 </ul>
-<section id="value-of-informed-consent" class="level2">
-<h2 class="anchored" data-anchor-id="value-of-informed-consent">Value of Informed Consent</h2>
+<section id="value-of-informed-consent" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="value-of-informed-consent"><span class="header-section-number">6.1</span> Value of Informed Consent</h2>
 <p>Below we will use some of these questions to guide our discussion.</p>
 <style>
 p.comment {
@@ -137,8 +278,8 @@ font-style: italic;
 <p><strong>See example</strong> of mailers sent to more than 100,000 Montana registered voters for a nonpartisan judicial election.</p>
 <p><img src="images/montana.png" class="img-fluid" style="width:50.0%"></p>
 </section>
-<section id="research-integrity-reproducibility-and-transparency" class="level2">
-<h2 class="anchored" data-anchor-id="research-integrity-reproducibility-and-transparency">Research Integrity, Reproducibility, and Transparency</h2>
+<section id="research-integrity-reproducibility-and-transparency" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="research-integrity-reproducibility-and-transparency"><span class="header-section-number">6.2</span> Research Integrity, Reproducibility, and Transparency</h2>
 <style>
 p.comment {
 background-color: #DBDBDB;
@@ -174,8 +315,8 @@ font-style: italic;
 }
 
 </style>
-<section id="preregistration" class="level3">
-<h3 class="anchored" data-anchor-id="preregistration">Preregistration</h3>
+<section id="preregistration" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="preregistration"><span class="header-section-number">6.2.1</span> Preregistration</h3>
 <p>What is pre-registration? (from Boudreau)</p>
 <ul>
 <li>“Practice of developing one’s research questions, hypotheses, research design, and analyses before observing the data and making that information public on an independent registry.”</li>
@@ -206,8 +347,8 @@ font-style: italic;
 </p><p>Your ideas …</p>
 <p></p>
 </section>
-<section id="reporting-an-experimental-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="reporting-an-experimental-analysis">Reporting an Experimental Analysis</h3>
+<section id="reporting-an-experimental-analysis" class="level3" data-number="6.2.2">
+<h3 data-number="6.2.2" class="anchored" data-anchor-id="reporting-an-experimental-analysis"><span class="header-section-number">6.2.2</span> Reporting an Experimental Analysis</h3>
 <p>(from Boudreau and Gerber et al.&nbsp;2015)</p>
 <ul>
 <li>Eligibility and exclusion criteria for participants</li>
@@ -234,15 +375,15 @@ font-style: italic;
 </ul>
 </section>
 </section>
-<section id="failed-designs" class="level2">
-<h2 class="anchored" data-anchor-id="failed-designs">“Failed Designs”</h2>
+<section id="failed-designs" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="failed-designs"><span class="header-section-number">6.3</span> “Failed Designs”</h2>
 <p><strong><em>What can we do in our experimental designs to allow learning even when we do not get significant results?</em></strong></p>
 <p class="comment">
 </p><p>Your ideas …</p>
 <p></p>
 </section>
-<section id="sampling-considerations" class="level2">
-<h2 class="anchored" data-anchor-id="sampling-considerations">Sampling Considerations</h2>
+<section id="sampling-considerations" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="sampling-considerations"><span class="header-section-number">6.4</span> Sampling Considerations</h2>
 <style>
 p.comment {
 background-color: #DBDBDB;
@@ -271,8 +412,8 @@ font-style: italic;
 <p class="comment">
 </p><p>Your ideas …</p>
 <p></p>
-<section id="power-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="power-analysis">Power Analysis</h3>
+<section id="power-analysis" class="level3" data-number="6.4.1">
+<h3 data-number="6.4.1" class="anchored" data-anchor-id="power-analysis"><span class="header-section-number">6.4.1</span> Power Analysis</h3>
 <p>We are often concerned about guarding against false positives. We do this by setting a conservative threshold for judging significance in hypothesis testing.</p>
 <ul>
 <li>Type I error: “false positive”: the error of rejecting a null hypothesis when it is actually true +Conventionally, our tolerance for false positives are <span class="math inline">\(\alpha = 0.05\)</span>.</li>
@@ -319,8 +460,8 @@ font-style: italic;
 </div>
 </div>
 </section>
-<section id="power-in-r" class="level3">
-<h3 class="anchored" data-anchor-id="power-in-r">Power in R</h3>
+<section id="power-in-r" class="level3" data-number="6.4.2">
+<h3 data-number="6.4.2" class="anchored" data-anchor-id="power-in-r"><span class="header-section-number">6.4.2</span> Power in R</h3>
 <p>To conduct a power analysis</p>
 <p>We need all but one of:</p>
 <ul>
@@ -389,8 +530,8 @@ NOTE: n is number in *each* group</code></pre>
 NOTE: n is number in *each* group</code></pre>
 </div>
 </div>
-<section id="additional-resources-for-power-in-r" class="level4">
-<h4 class="anchored" data-anchor-id="additional-resources-for-power-in-r">Additional Resources for Power in R</h4>
+<section id="additional-resources-for-power-in-r" class="level4" data-number="6.4.2.1">
+<h4 data-number="6.4.2.1" class="anchored" data-anchor-id="additional-resources-for-power-in-r"><span class="header-section-number">6.4.2.1</span> Additional Resources for Power in R</h4>
 <p>Power analysis in Conjoint Experiments by Martin Lukac: <a href="https://mblukac.github.io/posts/2020/08/cj_poweranalysis/">tool</a></p>
 <p>R resource: Additional functions from <a href="https://www.statmethods.net/stats/power.html">Statmethods</a></p>
 <p>For proportions, The command <code>power.prop.test(n, p1, p2, sig.level, power, alternative)</code> may be used to calculate the power. Note that this command may only be used to calculate power for a two-sample test.</p>
@@ -422,8 +563,8 @@ NOTE: n is number in *each* group</code></pre>
 </div>
 </section>
 </section>
-<section id="relationship-between-error-rates-and-multiple-testing" class="level3">
-<h3 class="anchored" data-anchor-id="relationship-between-error-rates-and-multiple-testing">Relationship between Error Rates and Multiple Testing</h3>
+<section id="relationship-between-error-rates-and-multiple-testing" class="level3" data-number="6.4.3">
+<h3 data-number="6.4.3" class="anchored" data-anchor-id="relationship-between-error-rates-and-multiple-testing"><span class="header-section-number">6.4.3</span> Relationship between Error Rates and Multiple Testing</h3>
 <span class="math display">\[\begin{align*}
 Pr(\text{at least one significant result}) &amp;= 1 - Pr(\text{no significant result})\\
 &amp;= 1 - (1 - 0.05)^{\text{number of tests}}
@@ -436,12 +577,12 @@ Pr(\text{at least one significant result}) &amp;= 1 - Pr(\text{no significant re
 </div>
 </div>
 <p>For this reason, researchers may make adjustments to p-values when they have several tests in a single analysis. See <a href="https://egap.org/resource/10-things-to-know-about-multiple-comparisons/">EGAP’s resource</a></p>
-</section>
+
+
 </section>
 </section>
 
-</main>
-<!-- /main column -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -675,6 +816,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./05-Visualization.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Visualization</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
