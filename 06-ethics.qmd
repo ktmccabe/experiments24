@@ -211,6 +211,16 @@ Your ideas ...
 
 </p>
 
+Kane (2024) offers a few ideas. Table 1 provides tips on approaching these seven alternative explanations.
+
+  1. Check for inattentiveness. How can we do this?
+  2. Did the treatment vary the independent variable of interest?
+  3. Were respondents pre-treated-- maybe even outside the context of the study?
+  4. Is there enough statistical power?
+  5. Do we have a sound measure of our outcome? In what way? How can this go wrong?
+  6. Do we have ceiling/floor effects?
+  7. Are there counterveiling treatment effects? How can we look for these?
+
 
 ## Sampling Considerations
 
