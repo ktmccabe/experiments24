@@ -14,6 +14,7 @@ book:
     - 05-Visualization.qmd
     - 06-ethics.qmd
     - 07-FieldExperiments.qmd
+    - 08-QuasiNaturalExperiments.qmd
   page-navigation: true
   sidebar:
     style: docked
