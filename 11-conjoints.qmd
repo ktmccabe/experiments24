@@ -8,6 +8,7 @@ In this section, we will briefly go over conjoint designs. You can see the follo
 -   Caution in estimation of interactions: Naoki Egami & Kosuke Imai (2019) [Causal Interaction in Factorial Experiments: Application to Conjoint Analysis](https://www.tandfonline.com/doi/citedby/10.1080/01621459.2018.1476246), Journal of the American Statistical Association, 114:526, 529-540, DOI: 10.1080/01621459.2018.1476246
 -   Caution in population used: De la Cuesta, B., Egami, N., & Imai, K. (2022). [Improving the External Validity of Conjoint Analysis: The Essential Role of Profile Distribution](https://www.cambridge.org/core/journals/political-analysis/article/abs/improving-the-external-validity-of-conjoint-analysis-the-essential-role-of-profile-distribution/B911EF14513292A24ECB4AC4BAA3FA6B). Political Analysis, 30(1), 19-45. doi:10.1017/pan.2020.40
 -  Caution in interpretation of the effects of conjoints: Abramson, Scott F., Korhan Koçak, and Asya Magazinnik. ["What do we learn about voter preferences from conjoint experiments?."](https://onlinelibrary.wiley.com/doi/full/10.1111/ajps.12714) American Journal of Political Science 66.4 (2022): 1008-1020.
+-  Accounting for measurement error in conjoints: Katherine Clayton, Yusaku Horiuchi, Aaron R. Kaufman, Gary King, and Mayya Komisarchik. Working Paper. ["Correcting Measurement Error Bias in Conjoint Survey Experiments".](https://tinyurl.com/24btw3dq)
 -   Programming a conjoint in qualtrics: Strezhnev, Anton. [Conjoint Survey Design Tool](https://github.com/astrezhnev/conjointsdt)
 
 ## Conjoint Overview
