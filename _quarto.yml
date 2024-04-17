@@ -17,6 +17,7 @@ book:
     - 08-QuasiNaturalExperiments.qmd
     - 09-LabExperiments.qmd
     - 10-Mediation.qmd
+    - 11-conjoints.qmd
   page-navigation: true
   sidebar:
     style: docked
